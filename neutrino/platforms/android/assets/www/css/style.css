@@ -1,0 +1,89 @@
+body{
+
+}
+#reg-btn{background-color: green; color: #ffffff}
+#login-btn{background-color: #314cb6; color: #ffffff}
+#container{margin-top: 130px;}
+#rec-btn{background-color: lightcoral; color: #ffffff}
+#btn-a,#btn-b,#btn-c,#btn-d, #btn-e, #btn-f, #btn-g, #btn-h,#btn-i, #btn-j,
+#btn-k,#btn-l,#btn-m,#btn-n, #btn-o, #btn-p,
+#btn-q, #btn-r, #btn-s,#btn-t, #btn-u, #btn-v, #btn-w, #btn-x, #btn-y, #btn-z {
+    margin: 5px 5px 5px 5px;
+    background-color: cornflowerblue;
+    color:#ffffff;
+    font-weight: bold;
+    text-align: left;
+}
+.store-item{  border-bottom: solid thin lightgray;  }
+.verify-icon{width: 30px; height: 30px; margin-top: 5px}
+.shop-logo{width: 75px; height: 75px; border-radius: 100px; border: medium solid lightgray; margin-top: 5px;}
+.item-div{border-bottom: thin solid lightgray}
+.unread-msgs-span{  background-color: cornflowerblue; color: #ffffff; border-radius: 20px; padding: 2px; margin-top: 10px; }
+.store-item-link{color: #000000!important;}
+.lastactivity-span{margin-top: 10px;}
+.logo-image{width: 200px; height: 80px;}
+#type-area{margin-left: 10px}
+.user-text-input{border-radius: 5px;}
+.chat-contact_info{ width: 100%;text-align: center; color: #314cb6; font-weight: bold;}
+#wall{border: thin solid lightgray}
+.storeName{font-weight: bold}
+
+
+
+.dashboard_div{
+    border: medium solid lightgrey;
+    border-radius: 8px;
+    padding:3px;
+    margin-top:10px;
+
+}
+.navDiv{
+    text-align: center
+}
+
+.header-list{
+    list-style-type: none;
+}
+
+.nav-item{display: inline-block;}
+.dashboard_store_name{
+    font-weight: bold;
+    font-size: 15pt;
+}
+.brand-word{}
+
+i.fa-phone{color: #000000}
+.white_phone{color: #ffffff!important;}
+i.fa-facebook-square{color: darkblue}
+i.fa-youtube-square{color: red}
+i.fa-twitter-square{color: lightblue}
+
+.my-service-div{
+    box-shadow: 3px 3px 3px 3px lightgrey;
+    display: inline-block;
+    margin: 10px;
+    padding: 3px;
+    width: 188px;
+
+}
+
+.categoryDiv{
+    font-weight: 800;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.TextBox{
+    box-shadow: 3px 3px 3px 3px lightgray;
+}
+.top-margin{margin-top: 8px; margin-bottom: 8px;}
+.helep-btn{
+
+}
+td{
+    font-weight: bold;
+}
+
+.contactSpan{
+    color: white;
+}

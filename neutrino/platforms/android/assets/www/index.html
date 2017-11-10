@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/lib/jquery/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/lib/jquery/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.mobile-1.4.5.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <section data-role="page" id="index" >
+            <header data-role="header" class="ui-header-fixed" style="background-color: #314cb6;">
+                <div style="color: #ffffff; margin-left: 10px"><img src="img/heleplogo2.png" alt="logo" class="logo-image" /> </div>
+                <div data-role="navbar" >
+                    <ul style="background-color: #314cb6">
+                        <li style="background-color: #314cb6;" title="View all services"><a href="services.html" data-iconpos="left" data-icon="grid"  data-transition="slide" data-direction="reverse">Services</a></li>
+                        <li title="View all stores"><a href="stores.html" data-icon="shop" data-iconpos="left"  data-transition="slide" data-direction="reverse">Stores</a></li>
+                        <li title="Search for products and services"><a href="search.html" data-icon="search" data-iconpos="left"  data-transition="slide" data-direction="reverse">Search</a></li>
+                        <li title="View your dashboard"><a href="index.html" data-icon="gear" data-iconpos="left"  data-transition="slide" data-direction="reverse">Dashboard</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section role="main" class="row ui-content">
+                <section class="col-sm-2 hidden-xs"></section>
+
+                <section class="col-sm-8 col-xs-12">
+                    <div id="container">
+                        <div style="width: 100%; text-align: center;">
+                            <span id="genErrResult"></span>
+                            <!--Login box-->
+                            <div style="margin-bottom: 50px;">
+                                <div><h3><span style="color: #314cb6; font-weight: bold;">Log in </span></h3></div>
+                                <form id="login-form">
+
+
+                                        <input id="phone" type="text" name="phone" value="" placeholder="Enter your phone number"  class="TextBox" /><br>
+                                        <span id="phoneErr"></span>
+
+                                        <input id="password" type="password" name="password" value="" placeholder="Enter your password"  class="TextBox"  /><br>
+                                        <span id="pwErr"></span>
+
+                                        <button type="submit"  data-role="button" id="login-btn">Log me in</button>
+
+                                </form>
+                            </div>
+
+                            <!--Registration box-->
+                            <p>
+                                <h5><span class="labelSpan">Don't yet have an account?</span></h5>
+                                <a id="reg-btn" data-role="button" data-transition="slide"  href="register.html">Register</a>
+                            </p>
+
+                            <div>
+                                <h5><span class="labelSpan">Did you forget your password?</span></h5>
+                                <a id="rec-btn" data-role="button" data-transition="slide"  href="#">Recover it</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-sm-2 hidden-xs"></section>
+
+            </section>
+        </section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/stores.js"></script>
+    </body>
+</html>

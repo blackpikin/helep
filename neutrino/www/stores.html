@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/lib/jquery/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <title>Hello World</title>
+</head>
+<body>
+<section data-role="page" id="stores" >
+    <header data-role="header" class="ui-header-fixed" style="background-color: #314cb6;">
+        <div style="color: #ffffff; margin-left: 10px"><img src="img/heleplogo2.png" alt="logo" class="logo-image" /> </div>
+        <div data-role="navbar" >
+            <ul style="background-color: #314cb6">
+                <li style="background-color: #314cb6;" title="View all services"><a href="services.html" data-iconpos="left" data-icon="grid"  data-transition="slide" data-direction="reverse">Services</a></li>
+                <li title="View all stores"><a href="stores.html" data-icon="shop" data-iconpos="left"  data-transition="slide" data-direction="reverse">Stores</a></li>
+                <li title="Search for products and services"><a href="search.html" data-icon="search" data-iconpos="left"  data-transition="slide" data-direction="reverse">Search</a></li>
+                <li title="View your dashboard"><a href="index.html" data-icon="gear" data-iconpos="left"  data-transition="slide" data-direction="reverse">Dashboard</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section role="main" class="row ui-content">
+        <section class="col-sm-2 hidden-xs"></section>
+
+        <section class="col-sm-8 col-xs-12">
+            <div id="container" >
+                    <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 id="storeName_1" class="storeName">Diaper Heaven</h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                       <div class="place-order-link">
+                           <a data-role="button" href="chat.html" id="storeNamelink_1" data-storename="Diaper Heaven" data-transition="slideup" class="store-item-link">Enquiry</a>
+                       </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                            <br><br>
+                        <span class="unread-msgs-span">20</span>
+                            <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+
+                <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="storeName">Upper Heaven</h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                        <div class="place-order-link">
+                            <a data-role="button" href="chat.html" id="storeNamelink_2" data-storename="Upper Heaven" data-transition="slideup" class="store-item-link">Enquiry</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                        <br><br>
+                        <span class="unread-msgs-span">20</span>
+                        <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+                <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="storeName">G.I. Joe Hall</h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                        <div class="place-order-link">
+                            <a data-role="button" href="chat.html" id="storeNamelink_3" data-storename="G.I. Joe Hall" data-transition="slideup" class="store-item-link">Enquiry</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                        <br>
+                        <br>
+                        <span class="unread-msgs-span">20</span>
+                        <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+                <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="storeName">DOVV Mendong</h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                        <div class="place-order-link">
+                            <a data-role="button" href="chat.html" id="storeNamelink_4" data-storename="DOVV Mendong" data-transition="slideup" class="store-item-link">Enquiry</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                        <br>
+                        <br>
+                        <span class="unread-msgs-span">20</span>
+                        <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+                <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="storeName">DOVV Mokolo</h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                        <div class="place-order-link">
+                            <a data-role="button" href="chat.html" id="storeNamelink_5" data-storename="DOVV Mokolo" data-transition="slideup" class="store-item-link">Enquiry</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                        <br>
+                        <br>
+                        <span class="unread-msgs-span">20</span>
+                        <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+                <div class="row store-item">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="The shop's logo" class="shop-logo" />
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="storeName"><b>LA RIVE Supermarket</b></h3>
+                        <span data-icon="bullets">Product1, product2, product 3, product 4, product n</span>
+                        <div class="place-order-link">
+                            <a data-role="button" href="chat.html" id="storeNamelink_6" data-storename="LA RIVE Supermarket" data-transition="slideup" class="store-item-link">Enquiry</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="img/logo.png" alt="verifiedStatus" class="verify-icon" />
+                        <br>
+                        <br>
+                        <span class="unread-msgs-span">20</span>
+                        <br><br>
+                        <span class="lastactivity-span">11:30</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="col-sm-2 hidden-xs"></section>
+
+    </section>
+</section>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/stores.js"></script>
+</body>
+</html>
